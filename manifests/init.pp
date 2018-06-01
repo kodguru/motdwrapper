@@ -35,7 +35,12 @@
 #
 # Copyright 2018 Your name here, unless otherwise noted.
 #
-class motdwrapper {
+class motdwrapper (
 
 
-}
+)
+ {
+  include ::motd
+  notify{"$motd::issue_mode": withpath => true}
+
+  }

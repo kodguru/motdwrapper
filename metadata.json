@@ -1,8 +1,8 @@
 {
-  "name": "ehdaadn-motdwrapper",
+  "name": "motdwrapper",
   "version": "0.1.0",
   "author": "ehdaadn",
-  "summary": "This is a wrapper around the motd module, per recommendation by",
+  "summary": "This is a wrapper around the motd module, per recommendation by Phillip van Huellen",
   "license": "Apache 2.0",
   "source": "eedphhuhttps://github.com/kodguru/motdwrapper",
   "project_page": "https://github.com/kodguru/motdwrapper",
