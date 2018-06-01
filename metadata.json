@@ -1,0 +1,14 @@
+{
+  "name": "ehdaadn-motdwrapper",
+  "version": "0.1.0",
+  "author": "ehdaadn",
+  "summary": "This is a wrapper around the motd module, per recommendation by",
+  "license": "Apache 2.0",
+  "source": "eedphhuhttps://github.com/kodguru/motdwrapper",
+  "project_page": "https://github.com/kodguru/motdwrapper",
+  "issues_url": "https://github.com/kodguru/motdwrapper/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
