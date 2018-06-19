@@ -1,0 +1,18 @@
+-- <%=@fqdn%> --
+
+  Located in:          <%=@site%>
+  <% unless  @e_install_profile.nil? %>
+    OS profile:          <%=@e_install_profile%>
+  <% end %>
+  Puppet role/profile: %{::role} / %{::profile}
+  Operated by / for: GSS Linux Unix OPS /  %{::team}  %{::e_pdu}
+ 
+  <%# tmpvar = scope.lookupvar('server::usage') -%>
+  %{hiera('server::usage')}
+  %{hiera('server::url')}
+
+<%=@tmpvar%>
+
+<%=@osfamily%>
+
+<%=@e_pdu%>

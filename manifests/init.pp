@@ -26,7 +26,7 @@
 #  class { 'motdwrapper':
 #    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #  }
-#
+#=
 # === Authors
 #
 # Author Name <author@domain.com>
@@ -36,11 +36,16 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class motdwrapper (
-
+  $site=hiera('site::site_code'),
+  $issue_content=template("motdwrapper/issue.erb"),
+  $motd_content=template("motdwrapper/motd.erb"),
 
 )
- {
-  include ::motd
-  notify{"$motd::issue_mode": withpath => true}
 
+ {
+
+  include ::motd
+  notify{"$motd_content": withpath => true}
+  #notify{"$site":}
+  #notice("$motd_content")
   }
